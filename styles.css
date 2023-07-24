@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Major+Mono+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Covered+By+Your+Grace&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barrio&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rock+3D&display=swap');
 *{
     margin: 0%;
     padding: 0%;
-    font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
 
@@ -18,6 +21,7 @@
     font-size: 1.5rem;
     letter-spacing: 2ch;
     background: transparent;
+    font-family: 'Major Mono Display', monospace;
     color: #0F0F0F;
 }
 
@@ -30,6 +34,7 @@
     font-size: 28px;
     color: #fff;
     letter-spacing: 1ch;
+    font-family: 'Barrio', cursive;
 }
 
 .score-board{
@@ -60,6 +65,7 @@
     letter-spacing: 1.5ch;
     background: transparent;
     color: #fff;
+    font-family: 'Covered By Your Grace', cursive;
 }
 
 .secondary-head{
@@ -68,6 +74,7 @@
     letter-spacing: 10px;
     background: transparent;
     color: #fff;
+    font-family: 'Covered By Your Grace', cursive;
 }
 
 .main-body{
@@ -76,7 +83,7 @@
     align-items: center;
     justify-content: center;
     background-color: #1f1f1f;
-    height: 55vh;
+    height: 50vh;
 }
 
 .set{
@@ -100,7 +107,8 @@ button{
 
 footer{
     color: #fff;
-    height: 50px;
+    height: 100px;
     letter-spacing: 5px;
-    padding-top: 20px;
+    padding-top: 50px;
+    font-family: 'Rock 3D', cursive;
 }
