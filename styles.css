@@ -4,28 +4,56 @@
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
+
 .header-space{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: #5b5f5e;
-    height: 15vh;
+    height: 12vh;
 }
+
 .header{
     font-size: 1.5rem;
     letter-spacing: 2ch;
     background: transparent;
     color: #0F0F0F;
 }
+
+.score{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    gap: 50px;
+    font-size: 28px;
+    color: #fff;
+    letter-spacing: 1ch;
+}
+
+.score-board{
+    display: flex;
+    flex-direction: row;
+    gap: 500px;
+}
+
+.player, .computer{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+
 .main{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     background-color: #1f1f1f;
-    height: 85vh;
+    height: auto;
 }
+
 .main-head{
     padding-top: 1.5rem;
     font-size: 1.5rem;
@@ -33,6 +61,7 @@
     background: transparent;
     color: #fff;
 }
+
 .secondary-head{
     padding-top: 1.5rem;
     font-size: 25px;
@@ -40,22 +69,38 @@
     background: transparent;
     color: #fff;
 }
+
 .main-body{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: #1f1f1f;
-    height: 85vh;
+    height: 55vh;
 }
+
 .set{
     display: flex;  
-    gap: 20px;
+    gap: 20vh;
+    height: 60vh;
+    width: auto;
+    align-items:flex-end;
 }
+
 button img{
     width: 20vh;
     height: 20vh;
 }
+
 button{
     outline: none;
+    background: transparent;
+    border-style: none;
+}
+
+footer{
+    color: #fff;
+    height: 50px;
+    letter-spacing: 5px;
+    padding-top: 20px;
 }

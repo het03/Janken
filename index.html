@@ -7,11 +7,13 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
     <div class="header-space">
         <div class="header">
             <h1 id="title">JANKEN</h1>
         </div>
     </div>
+
     <div class="main">
         <div class="main-head">
             <h2>Choose your hand</h2>
@@ -19,12 +21,35 @@
         <div class="secondary-head">
             <h3>First to 5 points wins!</h3>
         </div>
+        
+        <div class="score">
+            <h3>Score</h3>
+            <div class="score-board">
+                <div class="player">
+                    <h4>Player</h4>
+                    <p id="player-score">0</p>
+                </div>
+                <div class="computer">
+                    <h4>Computer</h4>
+                    <p id="computer-score">0</p>
+                </div>
+            </div>
+
         <div class="main-body">
             <div class="set">
                 <button class="w rock"><img src="images\rock.png" alt="rock"></button>
                 <button class="a paper"><img src="images\paper.png" alt="paper"></button>
                 <button class="s scissor"><img src="images\scissor.png" alt="scissor"></button>
             </div>
+        </div>
+
     </div>
+
+    <footer>
+        <div class="footer">
+            <p>Created by Het 2023</p>
+        </div>
+    </footer>
+
 </body>
 </html>
