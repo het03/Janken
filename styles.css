@@ -1,114 +1,246 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Major+Mono+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Covered+By+Your+Grace&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Barrio&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rock+3D&display=swap');
-*{
-    margin: 0%;
-    padding: 0%;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-}
-
-.header-space{
+  }
+  
+  body {
+    font-size: 16px;
+  }
+  
+  .header-space {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: #5b5f5e;
     height: 12vh;
-}
-
-.header{
+  }
+  
+.header {
     font-size: 1.5rem;
     letter-spacing: 2ch;
     background: transparent;
     font-family: 'Major Mono Display', monospace;
     color: #0F0F0F;
-}
+  }
 
-.score{
+.score {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 50px;
-    gap: 50px;
-    font-size: 28px;
+    padding-top: 2vh;
+    gap: 2vh;
+    font-size: 2rem;
     color: #fff;
     letter-spacing: 1ch;
-    font-family: 'Barrio', cursive;
-}
-
-.score-board{
+    font-family: 'Covered By Your Grace', cursive;
+  }
+  
+  .score-board {
     display: flex;
-    flex-direction: row;
-    gap: 500px;
-}
-
-.player, .computer{
+    gap: 100px;
+    justify-content: center;
+    padding-top: 5vh;
+  }
+  
+  .player,
+  .computer {
     display: flex;
-    gap: 20px;
+    gap: 1vh;
     flex-direction: column;
     align-items: center;
-}
+    font-size: 2rem;
+  }
 
-.main{
+  .player-choice, .computer-choice{
+    font-size: 5rem;
+    padding-top: 5vh;
+  }
+
+  .main {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     background-color: #1f1f1f;
-    height: auto;
-}
-
-.main-head{
-    padding-top: 1.5rem;
-    font-size: 1.5rem;
-    letter-spacing: 1.5ch;
+    min-height: 100vh;
+    padding: 2vh 0 0 0;
+  }
+  
+  .main-head {
+    font-size: 3rem;
+    letter-spacing: 0.5ch;
     background: transparent;
     color: #fff;
     font-family: 'Covered By Your Grace', cursive;
-}
-
-.secondary-head{
-    padding-top: 1.5rem;
-    font-size: 25px;
-    letter-spacing: 10px;
+  }
+  
+  .secondary-head {
+    font-size: 1.8rem;
+    letter-spacing: 0.3ch;
     background: transparent;
     color: #fff;
     font-family: 'Covered By Your Grace', cursive;
-}
-
-.main-body{
+  }
+  
+  .main-body {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: #1f1f1f;
-    height: 50vh;
-}
-
-.set{
-    display: flex;  
-    gap: 20vh;
-    height: 60vh;
-    width: auto;
-    align-items:flex-end;
-}
-
-button img{
-    width: 20vh;
-    height: 20vh;
-}
-
-button{
+  }
+  
+  .set {
+    display: flex;
+    gap: 5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 10vh;
+  }
+  
+  button img {
+    width: 24vh;
+    height: auto;
+  }
+  
+  button {
     outline: none;
     background: transparent;
     border-style: none;
+  }
+
+  .modal{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border-radius: 8px;
+    z-index: 10;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:8px;
+    background-color: #1f1f1f;
+    width: 260px;
+    max-width: 80%;
+    padding: 15px;
 }
 
-footer{
-    color: #fff;
-    height: 100px;
-    letter-spacing: 5px;
-    padding-top: 50px;
-    font-family: 'Rock 3D', cursive;
+.modal.active{
+    transform: translate(-50%, -50%) scale(1);
 }
+
+.modal-text{
+    font-size: 35px;
+    color: #fff;
+    font-family: 'Covered By Your Grace', cursive;
+}
+
+.modal-button{
+    font-size: 25px;
+    width: 150px;
+    padding: 5px;
+    height: auto;
+    border-style: none;
+    border-radius: 8px;
+    background-color: #5b5f5e;
+    color: #fff;
+    font-family: 'Covered By Your Grace', cursive;
+}
+
+.modal-button:hover{
+    opacity: 70%;
+}
+
+.overlay{
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.7);
+    pointer-events: none;
+}
+
+.overlay.active{
+    opacity: 1;
+    pointer-events: all;
+}
+
+  footer{
+    display: flex;
+    background-color: #1f1f1f;
+    align-items: center;
+    justify-content: center;
+  }
+
+  footer p{
+    
+    color: #fff;
+    font-size: 1.5rem;
+    font-family: 'Covered By Your Grace', cursive;
+  }
+  
+  @media screen and (max-width: 1200px) {
+    .main {
+      padding: 1vh 0;
+    }
+  }
+  
+  @media screen and (max-width: 992px) {
+    .score {
+      font-size: 1.5rem;
+    }
+  
+    .player,
+    .computer {
+      font-size: 1.5srem;
+    }
+  
+    .main-head {
+      font-size: 2rem;
+    }
+  
+    .secondary-head {
+      font-size: 1.3rem;
+    }
+  
+    button img {
+      width: 20vh;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .header {
+      font-size: 1.8rem;
+    }
+  
+    .score {
+      font-size: 1.2rem;
+    }
+  
+    .player,
+    .computer {
+      font-size: 1.2rem;
+    }
+  
+    .main-head {
+      font-size: 1.7rem;
+    }
+  
+    .secondary-head {
+      font-size: 1rem;
+    }
+  
+    button img {
+      width: 8vh;
+    }
+  }

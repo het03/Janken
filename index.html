@@ -23,25 +23,33 @@
         </div>
         
         <div class="score">
-            <h3>Score</h3>
             <div class="score-board">
                 <div class="player">
                     <h4>Player</h4>
                     <p id="player-score">0</p>
+                    <div class="player-choice">❔</div>
                 </div>
                 <div class="computer">
                     <h4>Computer</h4>
                     <p id="computer-score">0</p>
+                    <div class="computer-choice">❔</div>
                 </div>
             </div>
-
+        </div>
+        
         <div class="main-body">
             <div class="set">
-                <button class="w rock"><img src="images\rock.png" alt="rock"></button>
-                <button class="a paper"><img src="images\paper.png" alt="paper"></button>
-                <button class="s scissor"><img src="images\scissor.png" alt="scissor"></button>
+                <button class="w rock"><img src="images/rock.png" alt="rock"></button>
+                <button class="a paper"><img src="images/paper.png" alt="paper"></button>
+                <button class="s scissor"><img src="images/scissor.png" alt="scissor"></button>
             </div>
         </div>
+
+        <div class="modal">
+            <div class="modal-text">Default</div>
+            <button class="modal-button">Play Again</button>
+        </div>
+        <div class="overlay"></div>
 
     </div>
 
@@ -50,6 +58,6 @@
             <p>Created by Het 2023</p>
         </div>
     </footer>
-
+    <script src="script.js" charset="utf-8"></script>
 </body>
 </html>
