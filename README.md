@@ -1,4 +1,4 @@
-#Janken (Rock-Paper-Scissors) Game
+# Janken (Rock-Paper-Scissors) Game
 
 Welcome to the Janken (Rock-Paper-Scissors) repository! This project is a simple web-based game that allows users to play the classic game of Rock-Paper-Scissors against the computer.
 
